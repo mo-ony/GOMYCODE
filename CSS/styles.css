@@ -1,0 +1,17 @@
+html{
+    font-family: Roboto;
+    text-align: center;
+    justify-content: center;
+}
+nav a{
+    color: lightslategray;
+}
+h2{
+    color: darkslateblue;
+    
+}
+
+article.works{
+    display: inline-block;
+    padding: 10px;
+}
