@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+body {
+ max-width: 1500px;
+ margin: 0 auto;
+ color: #8d8b8b;
+ font-family: 'Roboto', sans-serif;
+
+
+}
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 7rem;
+}
+nav img{
+ width: 18rem;
+}
+nav ul {
+ list-style: none;
+ gap: 2rem;
+ display: flex;
+} 
+
+nav ul li{
+ font-size: 14px;
+}
+
+nav ul li:hover{
+color: #00b39b;
+}
+
+.section1{
+ display: flex;
+ margin-top: 3rem;
+ align-items: center;
+ flex-direction: column;
+ gap: 2rem;
+}
+
+.section1 span{
+ color: #00b39b;
+ font-size: 36px;
+ font-weight: lighter;
+}
+
+.section1 div{
+ display: flex;
+ margin: 2rem 8rem;
+ gap: 2rem;
+}
+
+.section2{
+ display: flex;
+ margin-top: 3rem;
+ align-items: center;
+ margin: 2rem 8rem;
+ gap: 1rem;
+}
+.section2 div{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 10px;
+padding: 2.5rem;
+color: white;
+row-gap: 1rem;
+align-self: stretch;
+justify-content: space-between;
+flex-grow: 1;
+flex-basis: 0;
+}
+
+.section2 div .title{
+font-size: 22px;
+}
+.section2 div .text{
+font-weight: lighter;
+font-size: 20px;
+}
+
+.section2 div select{
+border: 0;
+color: white;
+text-decoration: underline;
+}
+
+.patients{
+background: #19C4A1;
+}
+.patients:hover{
+background: #19c4a1f0;
+}
+.doctors{
+background: #306CD7;
+}
+.doctors:hover{
+background: #306CD7f0;
+}
+.clinics{
+background: #151D27;
+}
+.clinics:hover{
+background: #151D27f0;
+}
+
+.section3{
+display: grid;
+grid-template-columns: 1fr 2fr;
+column-gap: 1rem;
+margin: 3rem 8rem;
+}
+.section3 span{
+grid-column: 1;
+color: #00b39b;
+font-size: 30px;
+font-weight: lighter;
+
+}
+.section3 div{
+grid-column: 2;
+display: flex;
+flex-wrap: wrap;
+column-gap: 0.7rem;
+}
+
+.section4{
+background-color: #D2F6F4;
+max-width:100%;
+display: flex;
+padding-left: 8rem; padding-right: 3rem;
+column-gap: 3rem;
+}
+
+.left{
+display: flex;
+flex-direction: column;
+}
+.right{
+display: flex;
+padding: 4rem 8rem;
+justify-content: flex-start;
+column-gap: 1rem;
+}
+
+.div1, .div2{
+display: flex;
+flex-direction: column;
+row-gap: 1rem;
+flex-grow: 1;
+flex-basis: 0;
+
+}
+.card{
+
+background-color: white;
+border-radius: 7px;
+display: flex;
+justify-content: center;
+row-gap: 0.8rem;
+align-items: center;
+padding: 2rem 1rem ;
+flex-grow: 1;
+flex-basis: 0;
+}
+.div2{
+margin-top: -2rem;
+margin-bottom: 2rem;
+}
+
+.card img{
+width: 2rem;
+}
+
+.title1, .title3{
+color: #00b39b;
+font-size: 32px;
+font-weight: lighter;
+padding-top: 4rem;
+text-align: center;
+}
+.text1, .text3{
+font-size: 14px;
+padding-top: 1rem; 
+text-align: center; 
+}
+
+.title2{
+color: #00b39b;
+font-size: 28px;
+font-weight: lighter;
+text-align: center;
+line-height: 95%;
+}
+
+.text2{
+font-size: 14px;
+text-align: center;
+line-height: 99%;
+}
+
+.section5{
+display: flex;
+flex-direction: column;
+row-gap: 2rem;
+margin: 2rem 8rem;
+}
+.container1{
+margin-left: 18rem;
+margin-right: 18rem;
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+.container2{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 1rem;
+}
+
+.country{
+display: flex;
+flex-direction: column;
+border-style: solid;
+border-width: 1px;
+border-color: #c4c4c439;
+border-radius: 5px;
+}
+.country:hover{
+box-shadow: 5px 10px 8px 10px #d6d6d639;
+}
+.country img{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+width: 100%;
+}
+
+.sub-section{
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+}
+
+.section5 button{
+font-size: 11px;
+font-weight: bolder;
+padding: 0.3rem 1rem;
+}
+
+.section6{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 2rem;
+margin-top: 5rem; margin-bottom: 3rem;
+
+}
+.section6 h2{
+text-align: center;
+font-weight: lighter;
+color: #262626;
+}
+
+.section6 button{
+font-size: 12px;
+font-weight: bolder;
+padding: 0.7rem;
+}
+
+footer{
+border-style:solid;
+border-left: 0; border-right:0; border-bottom:0; border-width: 1px;
+border-color: rgba(224, 224, 224, 0.623);
+padding: 2rem;
+}
+footer p{
+text-align: center;
+font-size: 11px;
+}
