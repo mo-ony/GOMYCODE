@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Clipboard landing page</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&family=Roboto:wght@100;400&display=swap');
+ * {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+body {
+ max-width: 1500px;
+ margin: 0 auto;
+ font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Roboto', sans-serif;
+
+}
+header{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  align-items: center;
+  position: relative;
+  row-gap: 4rem;
+
+}
+.background{
+position:absolute;
+width: 100%;
+top: 0;
+z-index: -1;
+}
+.title{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: hsl(210, 10%, 33%);
+}
+.desc{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 20px;
+  padding: 0 23rem;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+}
+header div{
+  display: flex;
+  column-gap: 1rem;
+}
+.btn1{
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #25B093;
+  font-size: 16px;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 45px;
+  border-color: #36957F;
+}
+.btn2{
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #4E59FD;
+  font-size: 16px;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 45px;
+  border-color: #3F48D2;
+}
+
+.container1, .container3, .container4{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.container2{
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+  margin-bottom: 4rem;
+}
+.container2> *{
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  padding: 4rem 0;
+  padding-right: 14rem;
+}
+.section1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.title1{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: hsl(210, 10%, 33%);
+}
+.desc1{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 16px;
+  color: hsl(201, 11%, 66%);
+}
+
+.container5{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 3rem;
+  width: 100%;
+  padding: 2rem 10rem;
+  margin-bottom: 5rem;
+}
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.section2 img{
+  width: 3rem;
+}
+
+.container6{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 10rem;
+}
+.container6 img{
+  justify-self: center;
+  height: fit-content;
+}
+.container7{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.container7 div{
+  display: flex;
+  column-gap: 1rem; 
+}
+footer{
+  background-color:#F2F4F6 ;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+  width: 100%;
+  align-items: center;
+}
+
+.leftt{
+  display: flex;
+  column-gap: 7rem;
+}
+.leftt img{
+  width: 3rem;
+  height: 3rem;
+}
+
+.menu{
+  display: flex;
+  column-gap: 4rem;
+}
+.menu div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.menu span{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  color: hsl(210, 10%, 33%);
+}
+
+.rightt{
+  display: flex;
+  column-gap: 1.3rem;
+}
+.rightt img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+</style>
+
+  </head>
+  <body>
+    <header>
+      <img  class="background" src="./images/bg-header-desktop.png" alt="">
+      <img src="./images/logo.svg" alt="">
+      <span class="title"> A history of everything you copy</span>
+      <span class="desc">A Clipboard allows you to track and organize
+        everything you copy. Instantly access your clipboard on all your devices.</span>
+        <div>
+          <button class="btn1">Download for iOS</button>
+          <button class="btn2">Download for Mac </button>
+        </div>
+
+    </header>
+    <div class="container1">
+      <span class="title">Keep track of your snippets</span>
+      <span class="desc">Clipboard instantly stores any item you copy in the cloud, meaning you can access your
+        snippets immediately on all your devices. Our Mac and iOS apps will help you
+        organize everything.</span>
+    </div>
+
+    <div class="container2">
+      <div><img src="./images/image-computer.png" alt=""></div>
+      <div class="right">
+        <div class="section1">
+          <span class="title1"> Quick Search</span>
+          <span class="desc1">Easily search your snippets by content,
+            category, web address, application, and more.</span>
+        </div>
+        <div class="section1">
+          <span class="title1"> iCloud Sync</span>
+          <span class="desc1">Instantly saves
+            and syncs snippets across all your devices.</span>
+        </div>
+        <div class="section1">
+          <span class="title1"> Complete History</span>
+          <span class="desc1">Retrieve any
+            snippets from the first moment you started using the app.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+      <span class="title">Access Clipboard anywhere</span>
+      <span class="desc">Whether you’re on the go, or at your computer, you can access all
+        your Clipboard snippets in a few simple clicks.</span>
+        <img src="./images/image-devices.png" alt="">
+    </div>
+
+
+    <div class="container4">
+      <span class="title">Supercharge your workflow </span>
+      <span class="desc">We’ve got the tools to boost your productivity.</span>
+    </div>
+
+    <div class="container5">
+      <div class="section2">
+        <img src="./images/icon-blacklist.svg" alt="">
+        <span class="title1">Create blacklists</span>
+        <span class="desc1">sensitive information never makes its way to your clipboard by excluding
+          certain sources.</span>
+      </div>
+      <div class="section2">
+        <img src="./images/icon-text.svg" alt="">
+        <span class="title1">Plain text snippets</span>
+        <span class="desc1">Remove unwanted formatting from copied text for a consistent look.</span>
+      </div>
+      <div class="section2">
+        <img src="./images/icon-preview.svg" alt="">
+        <span class="title1"> Sneak preview</span>
+        <span class="desc1">Quick preview of all snippets on
+          your Clipboard for easy access.</span>
+      </div>
+    </div>
+
+      <div class="container6">
+        <img src="./images/logo-google.png" alt="">
+        <img src="./images/logo-ibm.png" alt="">
+        <img src="./images/logo-microsoft.png" alt="">
+        <img src="./images/logo-hp.png" alt="">
+        <img src="./images/logo-vector-graphics.png" alt="">
+      </div>
+
+      <div class="container7">
+        <span class="title"> Clipboard for iOS and Mac OS</span>
+        <span class="desc">Available for
+          free on the App Store. Download for Mac or iOS, sync with iCloud and you’re
+          ready to start adding to your clipboard.</span>
+          <div>
+            <button class="btn1">Download for iOS</button>
+            <button class="btn2">Download for Mac </button>
+          </div>
+  
+        </div>
+
+        <footer>
+          <div class="leftt">
+            <img src="./images/logo.svg" alt="">
+            <div class="menu">
+              <div>
+                <span >FAQs</span>
+                <span>Contact Us</span>
+              </div>
+              <div>
+                <span>Privacy Policy</span>
+                <span>Press Kit </span>
+              </div>     
+              <span>Install Guide</span>
+              
+              
+            </div>
+          </div>
+          <div class="rightt">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+        </footer>
+ 
+  </body>
+</html>
