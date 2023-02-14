@@ -4,7 +4,7 @@ VAR
     sentence_length, Nb_words, Nb_vowels: interger;
     i: integer;
 BEGIN
-    i := 0; j := 0; k := 0;
+    i := 0; 
     sentence_length := 0; Nb_words := 0;  Nb_vowels := 0;
 
     read(sentence);
