@@ -1,0 +1,30 @@
+ALGORITHM Readsentence
+VAR
+    sentence : string;
+    sentence_length, Nb_words, Nb_vowels: interger;
+    i: integer;
+BEGIN
+    i := 0; j := 0; k := 0;
+    sentence_length := 0; Nb_words := 0;  Nb_vowels := 0;
+
+    read(sentence);
+    While(sentence[i] <> ".") do
+        // count the length of the sentence
+        sentence_length := sentence_length + 1;
+
+        // count the number of words in the sentence 
+        if(sentence[i] = " ") then
+            Nb_words := Nb_words+1;
+        end_if
+
+        // count the number of vowels in the sentence
+        if(sentence[i] = "a" or sentence[i] = "e" or sentence[i] = "i" or sentence[i] = "o" or sentence[i] = "u") then
+            Nb_vowels := Nb_vowels+1;
+        end_if
+        
+        i := i + 1 ;
+    end_while
+
+    Write(sentence_length, Nb_words, Nb_vowels);
+
+END
