@@ -1,0 +1,66 @@
+PROCEDURE Dot (V1,V2:ARRAY_OF FLOAT[M], VAR ps : FLOAT)
+VAR
+    i: INTEGER;
+BEGIN
+    FOR i FROM 0 TO V1.length -1 STEP 1  DO
+        ps := ps + V1[i]*V2[i];
+    END_FOR
+END
+
+
+ALGORITHM DotProduct
+VAR
+    i, M, N: INTEGER;
+    V1,V2: ARRAY_OF FLOAT[M];
+    ps: FLOAT;
+BEGIN
+
+    FOR i FROM 0 TO N STEP step 1  DO
+        read(V1); read(V2);
+        ps := 0;
+        Dot(V1, V2, ps);
+        IF (ps = 0) THEN
+            Write("V1 and V2 are orthogonal");
+        ELSE
+            Write("V1 and V2 are not orthogonal");
+        END_IF
+        
+    END_FOR
+    
+END
+
+
+// using a function
+
+FUNCTION Dot(V1,V2:ARRAY_OF FLOAT[M]) : FLOAT
+VAR
+    i: INTEGER; 
+    ps: FLOAT;
+BEGIN
+    ps:= 0;
+    FOR i FROM 0 TO V1.length -1 STEP 1  DO
+        ps := ps + V1[i]*V2[i];
+    END_FOR
+    RETURN ps ;
+END
+
+
+ALGORITHM DotProduct
+VAR
+    i, M, N: INTEGER;
+    V1,V2: ARRAY_OF FLOAT[M];
+    ps: FLOAT;
+BEGIN
+
+    FOR i FROM 0 TO N STEP step 1  DO
+        read(V1); read(V2);
+        ps := Dot(V1, V2);
+        IF (ps = 0) THEN
+            Write("V1 and V2 are orthogonal");
+        ELSE
+            Write("V1 and V2 are not orthogonal");
+        END_IF
+        
+    END_FOR
+    
+END

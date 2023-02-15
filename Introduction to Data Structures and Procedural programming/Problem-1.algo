@@ -1,0 +1,35 @@
+ALGORITHM  SumElements
+VAR
+    SetOne : ARRAY_OF INTEGER[N];
+    setTwo : ARRAY_OF INTEGER[M];
+    i, j, sum : INTEGER;
+    exists: BOOLEAN;
+BEGIN
+    sum := 0;
+    FOR i FROM 0 TO N-1 STEP 1  DO
+        exists := FALSE;
+        FOR j FROM 0 TO M-1 STEP 1  DO
+            IF (SetOne[i]=setTwo[j]) THEN
+                exists := TRUE;
+            END_IF
+        END_FOR
+        IF ( NOT exists ) THEN
+            sum := sum + SetOne[i];
+        END_IF
+    END_FOR
+
+    FOR i FROM 0 TO M-1 STEP 1  DO
+        exists := FALSE;
+        FOR j FROM 0 TO N-1 STEP 1  DO
+            IF (setTwo[i]=setOne[j]) THEN
+                exists := TRUE;
+            END_IF
+        END_FOR
+        IF ( NOT exists ) THEN
+            sum := sum + setTwo[i];
+        END_IF
+    END_FOR
+
+    Write(sum);
+
+END
