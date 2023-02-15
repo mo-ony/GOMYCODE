@@ -1,0 +1,25 @@
+FUNCTION Palindrome(word: STRING, start,end : INTEGER) : BOOLEAN
+BEGIN
+    IF (start = end OR start>end ) THEN
+        RETURN TRUE;
+    ELSE_IF (word[start] <> word[end]) THEN
+        RETURN FALSE;
+    ELSE
+        Palindrome(word, start+1 , end-1)
+    END_IF
+END
+
+ALGORITHM AlgoPalindrome
+VAR
+    word: STRING;
+    start, end: INTEGER;
+BEGIN
+    Read(word);
+    start := 0; 
+    end := word.length -1;
+    IF (palindrome(word, start, end) = TRUE) THEN
+        Write( "the word " , word ," is palindrome");
+    ELSE
+        Write( "the word " , word ," is not palindrome");
+    END_IF
+END
